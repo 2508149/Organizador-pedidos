@@ -1,0 +1,29 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "VALVULA XX",
+            "tempo_unitario": 30
+        },
+        {
+            "id": 2,
+            "nome": "VALVULA XXX",
+            "tempo_unitario": 50
+        },
+        {
+            "id": 3,
+            "nome": "VALVULA XXXX",
+            "tempo_unitario": 60
+        },
+	{
+	     "id": 4,
+	     "nome": "VALVULA XXXXX",
+	     "tempo_unitario": 75
+	},
+	{
+	     "id": 5,
+	     "nome": "VALVULA XXXXXX",
+	     "tempo_unitario": 100
+	}
+    ]
+}
