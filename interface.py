@@ -141,13 +141,22 @@ def _estilo_producao(df):
             cor = "#47391a"      # âmbar: atrasado, dentro do limite
         else:
             cor = ""
-        return [f"background-color: {cor}" if cor else ""] * len(r)
+
+        return [
+            f"background-color: {cor}; color: #e8edf6;" if cor
+            else "color: #e8edf6;"
+        ] * len(r)
+
     return df.style.apply(linha, axis=1)
 
 
 def _estilo_concluidos(df):
     return df.style.apply(
-        lambda r: ["background-color: #14352a"] * len(r), axis=1)
+        lambda r: [
+            "background-color: #14352a; color: #e8edf6;"
+        ] * len(r),
+        axis=1
+    )
 
 
 def _detalhes(ped, linha_df):
